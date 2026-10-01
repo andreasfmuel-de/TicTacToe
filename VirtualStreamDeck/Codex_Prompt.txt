@@ -1,0 +1,94 @@
+Hilf mir, **Elgatos offizielles Virtual Stream Deck** für meinen Data-Science-Kurs lokal einzurichten.
+
+Gemeint ist dieses Produkt:
+https://www.elgato.com/de/de/s/virtual-stream-deck
+
+Verwende die offizielle Stream-Deck-Software. Erstelle keine eigene Ersatz-App oder Browser-Nachbildung.
+
+**Zuerst prüfen**
+
+Prüfe mein Betriebssystem, die installierte Stream-Deck-Version und ob Virtual Stream Deck bei mir freigeschaltet und nutzbar ist. Verifiziere die aktuellen Voraussetzungen anhand offizieller Elgato-Dokumentation. Falls eine Voraussetzung fehlt, erkläre mir konkret, welche.
+
+Prüfe deine tatsächlichen lokalen Zugriffs- und Bedienmöglichkeiten. Behaupte keine Änderungen oder erfolgreichen Tests, die du nicht ausgeführt hast. Wo manuelle Bedienung erforderlich ist, führe mich mit kurzen Schritten durch die Einrichtung.
+
+**Vorlage und Erhalt bestehender Einstellungen**
+
+Ich stelle dir „DataScience-XL-v4-Paket.zip“ von meinem Kurskollegen zur Verfügung. Es enthält ein funktional vorbereitetes Profil für ein physisches Stream Deck XL, VS-Code-Tastenkombinationen, Einrichtungsskripte, Vorschauen und Quellcode.
+
+Nutze dieses v4-Paket als Grundlage. Prüfe, wie sich das XL-Profil mit den offiziell unterstützten Möglichkeiten auf Virtual Stream Deck übertragen lässt. Setze direkte Importkompatibilität nicht voraus.
+
+Erhalte die vorhandenen Aktionen und Symbole, soweit kompatibel. Passe persönliche Pfade, Programme und Links an meinen Rechner an. Übernimm insbesondere keine fremde GitHub-Adresse und keinen fremden Zoom-Link.
+
+Sichere meine bestehenden Einstellungen vor Änderungen. Falls ich bereits eigene Anpassungen vorgenommen habe, verwende meinen neuesten Export als Grundlage.
+
+**Gewünschtes Layout**
+
+Möglichst 8 Spalten × 4 Reihen mit zwei Seiten. Falls Virtual Stream Deck das anders organisiert, verwende die nächstliegende unterstützte Anordnung und erkläre die Abweichung.
+
+Seite 1, jeweils links nach rechts:
+
+Reihe 1:
+VS Code | Terminal | Jupyter | Explorer | Kursordner | GitHub | ChatGPT | Claude
+
+Reihe 2:
+Änderungen | Stage / Add | Commit | Fetch | Pull | Push | Branch | Historie
+
+Reihe 3:
+Run Cell | Run All | neue Code-Zelle | Markdown | Restart Kernel | Save | Commands | Variables
+
+Reihe 4:
+pandas | NumPy | Matplotlib | sklearn | Cheatsheet | Discord | Zoom | nächste Seite
+
+Seite 2:
+
+Erste Reihe:
+Status | Pull | Add | Commit | Push | Branch | Log | Repo
+
+Außerdem „Notizen“, unten links zurück zu Seite 1 sowie eine freie Programm-Taste.
+
+**Direkte Git-Aktionen auf Seite 1**
+
+- Änderungen: VS-Code-Quellcodeverwaltung öffnen.
+- Stage / Add: `git.stageAll` – ALLE Änderungen im gewählten Repository stagen.
+- Commit: `git.commitStaged` – nur bereits gestagte Änderungen; Nachricht in VS Code eingeben.
+- Fetch: `git.fetch`.
+- Pull: `git.pull`, vorhandene Einstellungen respektieren.
+- Push: `git.push`.
+- Branch: `git.checkout`.
+- Historie: `workbench.scm.history.focus`.
+
+Die Vorlage verwendet für Stage / Add bis Historie der Reihe nach Strg+Alt+F1 bis F7. Prüfe die Verfügbarkeit der Befehle in meiner VS-Code-Version.
+
+**Terminal-Tasten auf Seite 2**
+
+Die folgenden Texte ausschließlich ins VS-Code-Terminal einfügen, OHNE Enter oder automatische Ausführung:
+
+- Status: `git status`
+- Pull: `git pull --ff-only`
+- Add: `git add .`
+- Commit: `git commit -m "`
+- Push: `git push`
+- Branch: `git branch --show-current`
+- Log: `git log --oneline --graph --decorate -15`
+
+Hierfür verwendet die Vorlage Strg+Alt+F13 bis F19. „Repo“ öffnet die Quellcodeverwaltung.
+
+**Weitere Funktionen**
+
+Übernimm die Notebook-Aktionen aus dem Paket und prüfe sie: Zelle ausführen, alle Zellen ausführen, Code-Zelle einfügen, in Markdown umwandeln, Kernel neu starten und Variablen anzeigen.
+
+ChatGPT, Claude und Discord sollen möglichst als native Apps starten. Zoom öffnet meinen Meeting-Link. Kursordner, GitHub, Dokumentationen, Cheatsheet und Notizen erhalten die passenden lokalen beziehungsweise persönlichen Ziele.
+
+**VS-Code-Einrichtung**
+
+Prüfe die mitgelieferten Einrichtungsskripte vor der Ausführung. Das Paket enthält 23 individuelle Tastenkombinationen. Ergänze oder aktualisiere ausschließlich den markierten Data-Science-Block, sichere die bisherige Datei und erhalte andere Einträge. Berücksichtige benannte VS-Code-Profile.
+
+**Funktionstest**
+
+Prüfe besonders, ob beim Anklicken des virtuellen Decks die Aktionen im richtigen VS-Code-Fenster ankommen. Teste Seitenwechsel, App-Starts und Notebook-Aktionen.
+
+Verwende für Git-Tests ein separates Test-Repository. Führe keine Test-Commits, Pulls oder Pushes in meinen echten Kurs-Repositories aus.
+
+Arbeite in kurzen, konkreten Schritten, möglichst einen nach dem anderen. Gib bei längerer Arbeit Statusmeldungen. Nenne abschließend klar, was eingerichtet und tatsächlich getestet wurde und welche manuellen Tests noch fehlen.
+
+Beginne mit der Prüfung, ob Elgato Virtual Stream Deck bei mir verfügbar ist.
