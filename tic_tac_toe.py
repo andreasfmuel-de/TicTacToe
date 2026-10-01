@@ -4,19 +4,38 @@
 # If you run `uv run python tic_tac_toe.py` in the command line the game will start. Try it out! ;)
 
 # Function for ... (displaying the board?)
-def blabla():
+def display_board(board):
     pass
 
 
-# Function for... (choosing a player?)
-def blablabla():
+# Function for choosing the symbols
+def choose_symbols():
     pass
 
 
-# ... write as many functions as you need
+
+# Function for asking the player for a move
+def ask_for_move(board, symbol):
+    pass
 
 
-# Tic-tac-toe game
+# Function for checking if someone has won
+def check_winner(board, symbol):
+    pass
+
+
+# Function for checking if the game is a draw
+def is_draw(board):
+    pass
+
+
+# Function that runs one complete game
+def play_game():
+    pass
+
+
+if __name__ == "__main__":
+    play_game()
 if __name__ == "__main__":
     # Start a new round of Tic-tac-toe
     print("Welcome to a new round of Tic-Tac-Toe!")
